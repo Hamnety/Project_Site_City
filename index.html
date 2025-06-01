@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посёлок "Имя" - Официальный сайт</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>"Имя"</h1>
+                    <span>Посёлок с историей</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#about" class="nav-link">О посёлке</a></li>
+                        <li><a href="#history" class="nav-link">История</a></li>
+                        <li><a href="#events" class="nav-link">Мероприятия</a></li>
+                        <li><a href="#gallery" class="nav-link">Фотогалерея</a></li>
+                        <li><a href="#news" class="nav-link">Новости</a></li>
+                        <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Добро пожаловать в "Имя"</h2>
+            <p>Уютный посёлок с богатой историей и дружелюбными жителями</p>
+            <button class="hero-btn" onclick="scrollToSection('about')">Узнать больше</button>
+        </div>
+    </section>
+
+    <!-- Краткая информация -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О посёлке</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🏘️</div>
+                    <h3>Население</h3>
+                    <p>Около 2,500 жителей</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">📍</div>
+                    <h3>Расположение</h3>
+                    <p>В живописной местности среди лесов</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🏛️</div>
+                    <h3>Основан</h3>
+                    <p>В 1847 году</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🌲</div>
+                    <h3>Природа</h3>
+                    <p>Окружён хвойными лесами</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- История -->
+    <section id="history" class="history">
+        <div class="container">
+            <h2 class="section-title">История посёлка</h2>
+            <div class="history-content">
+                <div class="history-text">
+                    <p>Посёлок "Имя" был основан в 1847 году как небольшое поселение лесорубов. Название происходит от множества луж, которые образовывались весной в низинах местности.</p>
+                    
+                    <p>В начале XX века здесь была построена железнодорожная станция, что способствовало развитию торговли и привлечению новых жителей. Во время Великой Отечественной войны посёлок служил важным транспортным узлом.</p>
+                    
+                    <p>Сегодня "Имя" - это современный посёлок, сохранивший свой исторический облик и традиции.</p>
+                </div>
+                <div class="history-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">1847</div>
+                        <div class="timeline-content">Основание посёлка</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1903</div>
+                        <div class="timeline-content">Строительство ж/д станции</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1941-1945</div>
+                        <div class="timeline-content">Военные годы</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2000</div>
+                        <div class="timeline-content">Модернизация инфраструктуры</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Мероприятия -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2 class="section-title">Праздники и мероприятия</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">15 июня</div>
+                    <h3>День посёлка</h3>
+                    <p>Главный праздник года с концертами, ярмаркой и фейерверком</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">7 января</div>
+                    <h3>Рождественские гуляния</h3>
+                    <p>Традиционные колядки и народные игры</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">Масленица</div>
+                    <h3>Проводы зимы</h3>
+                    <p>Блины, хороводы и сжигание чучела</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">9 мая</div>
+                    <h3>День Победы</h3>
+                    <p>Торжественное шествие и возложение цветов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Фотогалерея -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Фотогалерея</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal('img1')">
+                    <img src="https://pazlyigra.ru/uploads/posts/2023-12/1703575165__original-1.jpg" alt="Центральная площадь">
+                    <div class="gallery-overlay">
+                        <span>Центральная площадь</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img2')">
+                    <img src="https://pazlyigra.ru/uploads/posts/2023-12/1703575165__original-1.jpg" alt="Лесная дорога">
+                    <div class="gallery-overlay">
+                        <span>Лесная дорога</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img3')">
+                    <img src="https://pazlyigra.ru/uploads/posts/2023-12/1703575165__original-1.jpg" alt="Старая церковь">
+                    <div class="gallery-overlay">
+                        <span>Старая церковь</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img4')">
+                    <img src="https://pazlyigra.ru/uploads/posts/2023-12/1703575165__original-1.jpg" alt="Река Лужка">
+                    <div class="gallery-overlay">
+                        <span>Река Лужка</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img5')">
+                    <img src="https://pazlyigra.ru/uploads/posts/2023-12/1703575165__original-1.jpg" alt="Зимний пейзаж">
+                    <div class="gallery-overlay">
+                        <span>Зимний пейзаж</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal('img6')">
+                    <img src="https://pazlyigra.ru/uploads/posts/2023-12/1703575165__original-1.jpg" alt="Летний фестиваль">
+                    <div class="gallery-overlay">
+                        <span>Летний фестиваль</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Новости -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="section-title">Новости</h2>
+            <div class="news-grid">
+                <article class="news-item">
+                    <div class="news-date">15 декабря 2024</div>
+                    <h3>Открытие новой детской площадки</h3>
+                    <p>В центре посёлка открылась современная детская площадка с безопасным покрытием и новыми аттракционами.</p>
+                    <a href="#" class="news-link">Читать далее</a>
+                </article>
+                <article class="news-item">
+                    <div class="news-date">10 декабря 2024</div>
+                    <h3>Ремонт дорог завершён</h3>
+                    <p>Завершились работы по ремонту главной дороги посёлка. Теперь проезд стал более комфортным и безопасным.</p>
+                    <a href="#" class="news-link">Читать далее</a>
+                </article>
+                <article class="news-item">
+                    <div class="news-date">5 декабря 2024</div>
+                    <h3>Подготовка к Новому году</h3>
+                    <p>Началась подготовка к новогодним праздникам. Планируется установка ёлки и праздничная программа.</p>
+                    <a href="#" class="news-link">Читать далее</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Администрация посёлка</h3>
+                        <p>📍 ул. Центральная, 15</p>
+                        <p>📞 +7 (XXX) XXX-XX-XX</p>
+                        <p>✉️ admin@luzhki.ru</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Часы работы</h3>
+                        <p>Понедельник - Пятница: 9:00 - 18:00</p>
+                        <p>Суббота: 9:00 - 14:00</p>
+                        <p>Воскресенье: выходной</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Обратная связь</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Сообщение" rows="5" required></textarea>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Посёлок "Имя"</h3>
+                    <p>© 2024 Все права защищены</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">О посёлке</a>
+                    <a href="#history">История</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для фотографий -->
+    <div id="photoModal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
